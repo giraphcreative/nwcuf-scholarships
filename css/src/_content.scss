@@ -12,6 +12,7 @@ body {
 .content {
 	background: $grey-light url(../img/bg-stripes.png) center center no-repeat;
 	background-size: cover;
+	padding-bottom: 30px;
 }
 
 .content-narrow {
@@ -40,6 +41,19 @@ body {
 	}
 }
 
+.sidebar {
+	float: left;
+	width: 27%;
+	margin: 0 1% 0 1%;
+	text-align: center;
+}
+
+.right-column {
+	float: left;
+	width: 69%;
+	margin: 0 1%;
+	padding: 30px;
+}
 
 .content-two-column {
 	@include respond-to( 768px ) {

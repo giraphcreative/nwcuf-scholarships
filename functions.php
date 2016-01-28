@@ -7,5 +7,7 @@ function p_scripts() {
 add_action( 'wp_enqueue_scripts', 'p_scripts' );
 
 
+require( 'library/metabox.php' );
+
 
 ?>

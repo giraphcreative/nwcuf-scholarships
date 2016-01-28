@@ -181,39 +181,6 @@ header .bar {
   @media only screen and (min-width: 768px) {
     header .bar {
       border-bottom: 20px solid #60605B; } }
-  header .bar:after {
-    top: 100%;
-    left: 50%;
-    border: solid transparent;
-    content: " ";
-    height: 0;
-    width: 0;
-    position: absolute;
-    pointer-events: none;
-    border-color: rgba(96, 96, 91, 0);
-    border-top-color: #60605B;
-    border-top-width: 40px;
-    border-bottom-width: 40px;
-    border-right-width: 120px;
-    border-left-width: 120px;
-    margin-left: -120px;
-    z-index: 100; }
-    @media only screen and (min-width: 768px) {
-      header .bar:after {
-        left: 0;
-        border-top-width: 56px;
-        border-bottom-width: 56px;
-        border-right-width: 168px;
-        border-left-width: 168px;
-        margin-left: 0; } }
-    @media only screen and (min-width: 900px) {
-      header .bar:after {
-        left: 0;
-        border-top-width: 72px;
-        border-bottom-width: 72px;
-        border-right-width: 216px;
-        border-left-width: 216px;
-        margin-left: 0; } }
   header .bar .wrap {
     font-size: 25px;
     line-height: 32px;
@@ -223,22 +190,6 @@ header .bar {
     @media only screen and (min-width: 768px) {
       header .bar .wrap {
         padding: 40px 20px 20px 20px; } }
-  @media only screen and (min-width: 768px) {
-    .page-template-page-quiz-start header .bar .sidebar {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      margin-left: 0;
-      content: " ";
-      width: 336px;
-      height: 400px;
-      background: url(../img/sidebar-philosophy.png) top center no-repeat;
-      background-size: contain;
-      z-index: 101; } }
-  @media only screen and (min-width: 900px) {
-    .page-template-page-quiz-start header .bar .sidebar {
-      width: 432px;
-      height: 500px; } }
 
 .wrap {
   max-width: 1150px;
@@ -246,7 +197,8 @@ header .bar {
 
 .content {
   background: #ececec url(../img/bg-stripes.png) center center no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  padding-bottom: 30px; }
 
 .content-narrow {
   padding: 40px 20px;
@@ -266,6 +218,18 @@ header .bar {
     .page-template-page-quiz-start .content-wide {
       min-height: 550px;
       padding-left: 432px; } }
+
+.sidebar {
+  float: left;
+  width: 27%;
+  margin: 0 1% 0 1%;
+  text-align: center; }
+
+.right-column {
+  float: left;
+  width: 69%;
+  margin: 0 1%;
+  padding: 30px; }
 
 @media only screen and (min-width: 768px) {
   .content-two-column {

@@ -4,7 +4,14 @@ get_header();
 
 ?>
 
-	<div id="content" class="wrap group content-wide" role="main">
+	<div id="content" class="wrap group" role="main">
+		<div class="sidebar">
+			<img src="<?php bloginfo( 'template_url' ) ?>/img/sidebar-arrow.png">
+			<?php
+			show_cmb_value( 'left_content' );
+			?>
+		</div>
+		<div class="right-column">
 			<?php 
 			// do post loop
 			if ( have_posts() ) :
@@ -13,6 +20,7 @@ get_header();
 				endwhile;
 			endif;
 			?>
+		</div>
 	</div><!-- #content -->
 <?php
 
