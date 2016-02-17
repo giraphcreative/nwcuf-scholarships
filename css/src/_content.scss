@@ -23,7 +23,6 @@ body {
 }
 
 .content-wide {
-	@extend .content-style;
 	padding: 40px 20px;
 
 	@include respond-to( 768px ) {
@@ -58,6 +57,7 @@ body {
 }
 
 .content-two-column {
+	@extend .content-style;
 	@include respond-to( 768px ) {
 		padding: 30px 0;
 	}
