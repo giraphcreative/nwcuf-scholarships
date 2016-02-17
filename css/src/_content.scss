@@ -50,6 +50,7 @@ body {
 }
 
 .right-column {
+	@extend .content-style;
 	float: left;
 	width: 69%;
 	margin: 0 1%;
