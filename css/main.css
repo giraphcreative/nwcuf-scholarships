@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,600italic,400italic);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,300italic,400italic,700italic);
 .clearfix, .group {
   zoom: 1; }
   .clearfix:before, .clearfix:after, .group:before, .group:after {
@@ -58,14 +58,15 @@ img {
 
 body {
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: Lato, sans-serif;
+  font-weight: 300;
   font-size: 16px;
   line-height: 22px;
   color: #414042; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600;
+  font-family: Lato, sans-serif;
+  font-weight: 700;
   line-height: 1.2em; }
 
 h1 {
@@ -90,15 +91,15 @@ p {
   padding: 8px 0; }
 
 strong {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600; }
+  font-family: Lato, sans-serif;
+  font-weight: 700; }
 
 em {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   font-style: italic; }
 
 strong em, em strong, h1 em, h2 em, h3 em, h4 em, h5 em, h6 em {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 600;
   font-style: italic; }
 
@@ -111,7 +112,8 @@ a {
     text-decoration: underline; }
 
 input, textarea {
-  font-family: "Open Sans", sans-serif; }
+  font-family: Lato, sans-serif;
+  font-weight: 300; }
 
 .content-style ol, .content-narrow ol, .right-column ol, .content-two-column ol, .half ol, .two-third ol, .three-quarter ol, .content-style ul, .content-narrow ul, .right-column ul, .content-two-column ul, .half ul, .two-third ul, .three-quarter ul {
   padding: 5px 0 5px 35px; }
@@ -131,7 +133,7 @@ input, textarea {
 
 .content-style blockquote, .content-narrow blockquote, .right-column blockquote, .content-two-column blockquote, .half blockquote, .two-third blockquote, .three-quarter blockquote {
   padding: 10px 25px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   font-style: italic;
   font-size: 1.2em;
   line-height: 1.5em;
@@ -149,8 +151,8 @@ input, textarea {
   padding: 9px 45px 6px 12px;
   background: #ADB947 url(../img/icon-button-arrow.png) right center no-repeat;
   color: white;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600;
+  font-family: Lato, sans-serif;
+  font-weight: 700;
   border: 3px solid white;
   box-shadow: 4px 4px 10px #878780;
   border-radius: 10px; }
@@ -166,30 +168,178 @@ h1, h2, h3, h4, h5, h6 {
   .navy h1, .navy h2, .navy h3, .navy h4, .navy h5, .navy h6 {
     color: #2C4668; }
 
-header .logo {
-  padding: 20px 20px 5px 20px;
-  max-width: 450px; }
-  @media only screen and (min-width: 768px) {
-    header .logo {
-      padding: 20px 0 10px 20px; } }
-
-header .bar {
-  background: #71CACB url(../img/bg-stripes.png) center center no-repeat;
-  background-size: cover;
-  border-bottom: 10px solid #60605B;
-  position: relative; }
-  @media only screen and (min-width: 768px) {
-    header .bar {
-      border-bottom: 20px solid #60605B; } }
-  header .bar .wrap {
-    font-size: 25px;
-    line-height: 32px;
-    text-align: right;
-    padding: 20px 10px 10px 10px;
-    color: white; }
+header {
+  padding-top: 30px; }
+  header .logo {
+    margin-right: 60px;
+    padding: 0 0 10px 20px;
+    max-width: 450px; }
     @media only screen and (min-width: 768px) {
-      header .bar .wrap {
-        padding: 40px 20px 20px 20px; } }
+      header .logo {
+        padding-left: 40px; } }
+  header nav {
+    zoom: 1;
+    position: relative; }
+    header nav:before, header nav:after {
+      content: "";
+      display: table; }
+    header nav, header nav:before, header nav:after {
+      clear: both; }
+    header nav button {
+      position: absolute;
+      right: 5px;
+      top: -80px;
+      width: 40px;
+      height: 40px;
+      border: 0;
+      padding: 0;
+      background: white;
+      color: black;
+      background: url(../img/icon-menu.png) center center no-repeat; }
+      @media only screen and (min-width: 1024px) {
+        header nav button {
+          display: none; } }
+    header nav ul.nav-menu {
+      display: none;
+      background: #93938e;
+      position: relative;
+      z-index: 1000;
+      text-align: center;
+      box-shadow: inset 0px 15px 22px -10px rgba(100, 100, 100, 0.3); }
+      @media only screen and (min-width: 1024px) {
+        header nav ul.nav-menu {
+          display: block;
+          zoom: 1;
+          padding-left: 7px; }
+          header nav ul.nav-menu:before, header nav ul.nav-menu:after {
+            content: "";
+            display: table; }
+          header nav ul.nav-menu, header nav ul.nav-menu:before, header nav ul.nav-menu:after {
+            clear: both; } }
+      header nav ul.nav-menu li {
+        box-shadow: inset 0px 15px 22px -10px rgba(100, 100, 100, 0.3); }
+        @media only screen and (min-width: 1024px) {
+          header nav ul.nav-menu li {
+            box-shadow: none;
+            position: relative;
+            display: inline-block; } }
+        header nav ul.nav-menu li a {
+          display: block;
+          font-family: Lato, sans-serif;
+          font-weight: 300;
+          padding: 15px 5px;
+          font-size: 16px;
+          line-height: 16px;
+          color: white;
+          text-align: center;
+          text-decoration: none;
+          text-transform: uppercase; }
+          @media only screen and (min-width: 1024px) {
+            header nav ul.nav-menu li a {
+              display: inline-block;
+              padding: 15px 8px; } }
+          @media only screen and (min-width: 1220px) {
+            header nav ul.nav-menu li a {
+              padding: 15px 15px; } }
+        header nav ul.nav-menu li:hover a, header nav ul.nav-menu li.open a {
+          background: #71CACB; }
+        @media only screen and (min-width: 1024px) {
+          header nav ul.nav-menu li:hover ul.sub-menu, header nav ul.nav-menu li.open ul.sub-menu {
+            display: block; } }
+        header nav ul.nav-menu li ul.sub-menu {
+          display: none;
+          margin-bottom: 3px; }
+          @media only screen and (min-width: 1024px) {
+            header nav ul.nav-menu li ul.sub-menu {
+              position: absolute;
+              left: 0;
+              top: 46px;
+              width: 230px;
+              background: #71CACB;
+              zoom: 1;
+              text-align: left; }
+              header nav ul.nav-menu li ul.sub-menu:before, header nav ul.nav-menu li ul.sub-menu:after {
+                content: "";
+                display: table; }
+              header nav ul.nav-menu li ul.sub-menu, header nav ul.nav-menu li ul.sub-menu:before, header nav ul.nav-menu li ul.sub-menu:after {
+                clear: both; } }
+          header nav ul.nav-menu li ul.sub-menu li {
+            box-shadow: inset 0px 5px 12px -10px rgba(100, 100, 100, 0.69);
+            display: block; }
+            header nav ul.nav-menu li ul.sub-menu li a {
+              padding: 7px 5px;
+              font-size: .9em;
+              display: block; }
+              @media only screen and (min-width: 1024px) {
+                header nav ul.nav-menu li ul.sub-menu li a {
+                  text-align: left;
+                  padding: 8px 12px; }
+                  header nav ul.nav-menu li ul.sub-menu li a:hover {
+                    background: #78cdce; } }
+  header .search {
+    position: relative; }
+    header .search input[type=text] {
+      display: block;
+      top: 0;
+      right: 35px;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: #acaca8;
+      border: 0;
+      padding: 0 15px;
+      font-size: 15px;
+      line-height: 35px; }
+    header .search input[type=submit] {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 35px;
+      height: 35px;
+      border: 0;
+      background: #464642 url(../img/icon-search.png) center center no-repeat;
+      text-indent: -400px;
+      cursor: pointer; }
+      @media only screen and (min-width: 768px) {
+        header .search input[type=submit] {
+          right: -6px;
+          top: -6px;
+          bottom: -6px;
+          width: 47px;
+          height: 47px;
+          border-radius: 50%;
+          border: 6px solid white; } }
+    @media only screen and (min-width: 768px) {
+      header .search {
+        position: absolute;
+        top: 50px;
+        right: 80px; } }
+    @media only screen and (min-width: 1024px) {
+      header .search {
+        right: 40px; } }
+  header .nwcua-logo {
+    display: none; }
+    @media only screen and (min-width: 768px) {
+      header .nwcua-logo {
+        display: block;
+        position: absolute;
+        top: -10px;
+        right: 90px; } }
+    @media only screen and (min-width: 1024px) {
+      header .nwcua-logo {
+        right: 50px; } }
+    header .nwcua-logo a {
+      opacity: .7;
+      -webkit-transition: opacity 400ms ease-in-out;
+              transition: opacity 400ms ease-in-out; }
+      header .nwcua-logo a:hover {
+        opacity: 1; }
+  @media only screen and (min-width: 768px) {
+    header {
+      position: relative; }
+      header .wrap {
+        position: relative; } }
 
 .wrap {
   max-width: 1150px;
@@ -276,13 +426,15 @@ img.aligncenter {
   padding-top: 70px;
   text-align: center; }
   .quiz-results h1 {
-    font-family: "Open Sans", sans-serif;
+    font-family: Lato, sans-serif;
+    font-weight: 300;
     font-weight: normal;
     line-height: 1.3em;
     color: #71CACB;
     padding: 20px 0; }
   .quiz-results h2 {
-    font-family: "Open Sans", sans-serif;
+    font-family: Lato, sans-serif;
+    font-weight: 300;
     font-weight: normal;
     color: #2c2c29;
     line-height: 1.3em;
@@ -292,8 +444,8 @@ img.aligncenter {
   background: white;
   border: 3px solid #ADB947;
   color: #ADB947;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600;
+  font-family: Lato, sans-serif;
+  font-weight: 700;
   padding: 5px 8px; }
 
 .gform_wrapper {
@@ -305,12 +457,42 @@ img.aligncenter {
     margin: 20px 0; }
 
 footer {
-  background: #60605B url(../img/bg-waves.png) center center no-repeat;
+  background: #93938e url(../img/bg-waves.png) center center no-repeat;
   background-size: cover;
   color: white;
-  padding: 20px 20px 50px;
-  text-align: right;
-  font-size: 1.2em; }
-  @media only screen and (min-width: 768px) {
-    footer {
-      padding: 20px 30px 80px; } }
+  zoom: 1; }
+  footer:before, footer:after {
+    content: "";
+    display: table; }
+  footer, footer:before, footer:after {
+    clear: both; }
+  footer .column {
+    padding: 20px; }
+    @media only screen and (min-width: 768px) {
+      footer .column {
+        float: left;
+        width: 33%;
+        border-left: 4px solid white;
+        min-height: 400px; }
+        footer .column.first {
+          width: 32%;
+          border-left: 0; } }
+    @media only screen and (min-width: 1024px) {
+      footer .column {
+        padding: 30px 40px; } }
+  footer h3 {
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 1.6em;
+    line-height: 1.2em;
+    color: white; }
+  footer a {
+    color: white;
+    text-decoration: none; }
+  footer nav a {
+    display: block;
+    padding: 3px; }
+  footer .social {
+    padding: 10px 0;
+    text-align: center; }
