@@ -22,6 +22,11 @@
 					877.928.6397 Fax<br>
 					<a href="mailto:foundation@nwcua.org">foundation@nwcua.org</a></p>
 
+				<p><strong>Idaho Office:</strong><br>
+					2710 W Sunrise Rim Rd,<br>
+					Suite 100<br>
+					Boise, ID 83705</p>
+
 				<p><strong>Oregon Office:</strong><br>
 					13221 SW 68th Pkwy,<br>
 					Suite 400<br>
@@ -31,11 +36,6 @@
 					18000 International Blvd,<br>
 					Suite 350<br>
 					Seattle, WA 98188</p>
-
-				<p><strong>Idaho Office:</strong><br>
-					2710 W Sunrise Rim Rd<br>
-					Suite 100<br>
-					Boise, ID 83705</p>
 			</div>
 			<div class="column">
 				<h3>Links</h3>
